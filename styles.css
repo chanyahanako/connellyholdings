@@ -77,6 +77,19 @@ hr {
 .company-listing {
    padding: .4rem .25rem;
 }
+.company-listing.img {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+.company-listing.img img {
+   width: 60px;
+   width: 64px;
+   border-radius: 8%;
+   /* margin-right: 14px; */
+   margin-left: 20px;
+   margin-top: .3rem;
+}
 .company-listing:hover {
    background-color: aliceblue;
    background-color: #eff7ff;
@@ -126,11 +139,21 @@ hr {
 .site-link {
    color: #1a0dab;
    color: #1e0ece;
-   display: block;
+   /* display: block; */
    font-size: 15px;
    font-weight: 500;
    line-height: 1.5;
    text-decoration: none;
+}
+.sitelink-status {
+   /* opacity: .5; */
+   color: #00904e;
+   font-size: 12px;
+   font-weight: 500;
+   margin-left: 2px;
+}
+.sitelink-status .fa-check {
+   font-size: 10px;
 }
 .sidenote {
    font-size: 12px;
@@ -202,6 +225,14 @@ hr {
    }
    h2 {
       font-size: 1.5em;
+   }
+   .company-listing.img {
+      flex-direction: column;
+   }
+   .company-listing.img img {
+      margin-left: 0;
+      margin-bottom: 1px;
+      width: 56px;
    }
    .company-listing-header .site-link {
       font-size: 15px;
