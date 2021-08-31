@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,*::after,*::before {
+   /* margin: 0;
+   padding: 0; */
+}
+
+body {
+   font-family: system-ui;
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Lato', sans-serif;
+   font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   /* font-family: system-ui; */    
+   margin: 0;
+}
+
+h1 {
+   margin-bottom: 16px;
+}
+
+h2 {
+   font-size: 2em;
+   font-size: 1.875em;
+   margin-bottom: 4px;
+}
+
+h3 {
+   font-size: 15px;
+   font-weight: 500;
+   margin-top: 1.25rem;
+   margin-bottom: .5rem;
+   opacity: .6;
+}
+
+p {
+   line-height: 1.5;
+   margin-top: 0;
+   margin-bottom: .5rem;
+}
+
+hr {
+   border: none;
+   border-top: 2px solid rgb(231 231 237 / 100%);
+   /* margin: .75rem 0; */
+   margin: 0;
+}
+
+.company-index {
+   max-width: 780px;
+   margin: 60px auto 0;
+}
+
+.company-listing-header {
+   cursor: pointer;
+}
+.company-listing-header .company-desc {
+   /* font-size: 15px;
+   margin-bottom: 2px; */
+   font-size: 17px;
+   margin-bottom: 3px;
+   color: black;
+   font-weight: 500;
+}
+.company-listing-header:hover .site-link {
+   color: #551A8B;
+   text-decoration: underline;
+}
+.company-listing-header .site-link {
+   font-size: 16px;
+}
+
+.company-listing {
+   padding: .4rem .25rem;
+}
+.company-listing:hover {
+   background-color: aliceblue;
+   background-color: #eff7ff;
+   background-color: #e8f3ff;
+   background-color: #e7f0fa;
+   background-color: rgb(231 240 250 / 60%);
+   cursor: pointer;
+}
+.company-listing:hover .company-name {
+   /* color: #1a0dab; */
+}
+.company-listing:hover .site-link {
+   color: #551A8B;
+   text-decoration: underline;
+}
+
+.company-name {
+   display: inline-block;
+   font-size: 17px;
+   /* font-size: 18px; */
+   font-weight: bold;
+   margin-bottom: 0;
+   margin-bottom: 1px;
+}
+.company-desc {
+   color: #000000;
+   font-size: 14px;
+   font-weight: 600;
+   display: block;
+   margin-bottom: .25rem;
+}
+.company-desc.full {
+   color: #4d5156;
+   color: #000000;
+   font-weight: 400;
+   margin-bottom: 2px;
+}
+.company-desc.full.last {
+   margin-bottom: 3px;
+}
+.company-desc-hl {
+   /* font-weight: 600; */
+   margin-right: 3px;
+   /* text-decoration: underline; */
+   /* font-style: italic; */
+}
+.site-link {
+   color: #1a0dab;
+   color: #1e0ece;
+   display: block;
+   font-size: 15px;
+   font-weight: 500;
+   line-height: 1.5;
+   text-decoration: none;
+}
+.sidenote {
+   font-size: 12px;
+   margin-top: 1px;
+   /* opacity: .7; */
+}
+.hltxt {
+   font-weight: 600;
+}
+.bookmark-tag {
+   background-color: rgb(255 72 0 / 12%);
+   border-radius: 4px;
+   color: #ff4800;
+   display: inline-block;
+   font-size: 12px;
+   font-weight: 600;
+   margin-left: 4px;
+   padding: 0 5px 1px;   
+}
+.bookmark-tag.blue {
+   background-color: rgb(0 76 214 / 12%);
+   color: #0041ff;
+}
+.bookmark-tag.darkblue {
+   background-color: rgb(0 28 169 / 12%);
+   color: #001ca9;
+}
+.fa-bookmark {
+   color: #1a0dab;
+   color: #ff4800;
+   margin-right: 5px;
+   width: .6em !important;
+}
+.fa-bookmark.blue {
+   color: #0041ff;
+}
+.fa-bookmark.darkblue {
+   color: #001ca9;
+}
+.fa-bookmark.teal {
+   color: #00a99a;
+}
+.bookmark-tag.teal {
+   background-color: rgb(228 7 255 / 16%);
+   color: #eb01ed;
+   background-color: rgb(0 177 162 / 19%);
+   color: #00a99a;
+}
+
+@media only screen and (max-width: 920px) {
+   .company-index {
+      margin: 30px auto 0;
+      padding: 0 20px;
+   }
+   h2 {font-size: 1.75em;}
+}
+@media only screen and (max-width: 800px) {
+   .company-index {
+      margin: 20px 10px 0;
+      padding: 0;
+   }
+   .company-name {
+      font-size: 16px;
+   }
+}
+@media only screen and (max-width: 600px) {
+   .company-index {
+      margin: 20px 8px 0;
+   }
+   h2 {
+      font-size: 1.5em;
+   }
+   .company-listing-header .site-link {
+      font-size: 15px;
+   }
+   .bookmark-tag {
+      font-size: 11px;
+   }
+   .site-link {
+      font-size: 14px;
+   }
+}
