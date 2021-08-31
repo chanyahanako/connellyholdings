@@ -5,6 +5,7 @@
 *,*::after,*::before {
    /* margin: 0;
    padding: 0; */
+   box-sizing: border-box;
 }
 
 body {
@@ -73,21 +74,20 @@ hr {
 .company-listing-header .site-link {
    font-size: 16px;
 }
-
 .company-listing {
-   padding: .4rem .25rem;
-}
-.company-listing.img {
    display: flex;
    align-items: flex-start;
-   justify-content: space-between;
+   padding: .4rem .25rem;
 }
-.company-listing.img img {
-   width: 60px;
+.company-listing img {
+   width: 96px;
    width: 64px;
-   border-radius: 8%;
+   width: 77px;
+   border-radius: 2%;
    /* margin-right: 14px; */
-   margin-left: 20px;
+   /* margin-left: 20px; */
+   margin-right: 16px;
+   margin-right: 15px;
    margin-top: .3rem;
 }
 .company-listing:hover {
@@ -121,19 +121,19 @@ hr {
    display: block;
    margin-bottom: .25rem;
 }
-.company-desc.full {
+.company-desc.more {
    color: #4d5156;
    color: #000000;
    font-weight: 400;
-   margin-bottom: 2px;
-}
-.company-desc.full.last {
    margin-bottom: 3px;
 }
+/* .company-desc.full.last {
+   margin-bottom: 3px;
+} */
 .company-desc-hl {
    /* font-weight: 600; */
    margin-right: 3px;
-   /* text-decoration: underline; */
+   text-decoration: underline;
    /* font-style: italic; */
 }
 .site-link {
@@ -148,6 +148,8 @@ hr {
 .sitelink-status {
    /* opacity: .5; */
    color: #00904e;
+   color: #4d5156;
+   color: rgb(77 81 86 / 70%);
    font-size: 12px;
    font-weight: 500;
    margin-left: 2px;
@@ -158,6 +160,7 @@ hr {
 .sidenote {
    font-size: 12px;
    margin-top: 1px;
+   margin-bottom: 0px;
    /* opacity: .7; */
 }
 .hltxt {
@@ -203,6 +206,11 @@ hr {
    color: #00a99a;
 }
 
+.hanako-img {    
+   background-color: #2b2b38;
+   padding: 12px;
+}
+
 @media only screen and (max-width: 920px) {
    .company-index {
       margin: 30px auto 0;
@@ -226,13 +234,12 @@ hr {
    h2 {
       font-size: 1.5em;
    }
-   .company-listing.img {
+   .company-listing {
       flex-direction: column;
    }
-   .company-listing.img img {
-      margin-left: 0;
-      margin-bottom: 1px;
-      width: 56px;
+   .company-listing img {
+      margin-bottom: 4px;
+      width: 60px;
    }
    .company-listing-header .site-link {
       font-size: 15px;
@@ -242,5 +249,13 @@ hr {
    }
    .site-link {
       font-size: 14px;
+   }
+   .sitelink-status {
+      font-size: 12px;
+      margin: 0 0 2px;
+      display: block;
+   }
+   .sitelink-status .fa-check {
+      font-size: 9px;
    }
 }
