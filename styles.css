@@ -120,14 +120,14 @@ hr {
    background-color: #e8f3ff;
    background-color: #e7f0fa;
    background-color: rgb(231 240 250 / 60%);
-   cursor: pointer;
+   /* cursor: pointer; */
 }
 .company-listing:hover .company-name {
    /* color: #1a0dab; */
 }
 .company-listing:hover .site-link {
    color: #551A8B;
-   text-decoration: underline;
+   /* text-decoration: underline; */
 }
 
 .company-name {
@@ -168,6 +168,9 @@ hr {
    font-weight: 500;
    line-height: 1.5;
    text-decoration: none;
+}
+.site-link:hover {
+   text-decoration: underline;
 }
 .sitelink-status {
    /* opacity: .5; */
